@@ -1,6 +1,10 @@
 <!-- LOGICA DI LAVORO -->
 <?php
 
+    // Controllo se è stato inserito un valore nell'imput
+    if (isset($_GET['pass_length'])) {
+    
+    }
 ?>
 
 <!-- LOGICA DI VISUALIZZAZIONE -->
@@ -29,6 +33,8 @@
                 </div>                
             </div>
         </form>
+
+        <h5 class="text-center my-5"></h5>
     </div>
 
 </body>
