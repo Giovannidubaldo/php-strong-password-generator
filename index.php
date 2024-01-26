@@ -15,5 +15,21 @@
 </head>
 <body>
     <h1 class="text-center my-5">Genera la tua password</h1>
+    <div class="container">
+        
+        <!-- Form per chiedere la lunghezza della password -->
+        <form action="index.php" method="GET">
+            <div class="row">
+                <div class="col-6">
+                    <input type="number" name="pass_length" id="pass_length" placeholder="Indica quanto deve essere lunga la tua password" 
+                    class="form-control form-control-sm" min="1">
+                </div>
+                <div class="col-2">
+                    <button type="submit" class="btn btn-sm btn-success">Genera</button>
+                </div>                
+            </div>
+        </form>
+    </div>
+
 </body>
 </html>
