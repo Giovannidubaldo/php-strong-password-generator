@@ -1,9 +1,18 @@
 <!-- LOGICA DI LAVORO -->
 <?php
+    // Funzione che genera la password
+    function generatePassword($pass){
+        $password = [];
+        $characters = 'abcdefghijklmnopqrstuvwxyzABCDEFGHILMNOPQRSTUVWXYZ0123456789!,;.:-_';
+        
+        
+    }
 
     // Controllo se è stato inserito un valore nell'imput
-    if (isset($_GET['pass_length'])) {
-    
+    if (isset($_GET['pass_length']) && $_GET['pass_length'] != '') {
+        $pass_length = $_GET['pass_length'];
+
+       
     }
 ?>
 
@@ -33,8 +42,7 @@
                 </div>                
             </div>
         </form>
-
-        <h5 class="text-center my-5"></h5>
+        <h5 class="text-center my-5"><?php echo $password ?></h5>
     </div>
 
 </body>
